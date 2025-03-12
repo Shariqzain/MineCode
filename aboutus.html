@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="./images/minecodeicon.png">
+  <title>About Us</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<style>
+    .col {
+        transition: transform 0.6s ease;
+    }
+
+    .col:hover {
+        transform: scale(1.05);
+    }
+
+</style>
+
+<body>
+  
+    <div id="background-container"></div>
+    <script>
+      fetch("./Components/background.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("background-container").innerHTML = data)
+        .catch(error => console.error("Error loading background:", error));
+    </script>
+
+
+    <div id="navbar-container"></div>
+    <script>
+      fetch("./Components/navbar.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("navbar-container").innerHTML = data)
+        .catch(error => console.error("Error loading navbar:", error));
+    </script>
+
+    <div class="container">
+
+      <div class="pt-5 px-5 rounded-4 bg-dark bg-opacity-10 border" data-bs-theme="dark" style="backdrop-filter: blur(2px); height: 500px; margin-top:100px;">
+        <div class="mctext px-1">
+          <h2 class="mb-4 mt-5 text-light fw-bold">Introduction</h2>
+          <p class="text-light pt-5" style="height: 400px;">Welcome to MineCode, a passionate and dynamic team of tech enthusiasts driven by innovation and excellence. We specialize in Data Structures & Algorithms (DSA), problem-solving, programming, and full-stack web development, constantly pushing our limits to craft efficient and scalable solutions. But we are more than just coders—our team thrives on a diverse range of interests, including gym, gaming, anime, machine learning, singing, music, and sports like football and basketball. This unique mix of technical expertise and personal passions fuels our creativity and strengthens our bond, making MineCode a powerhouse of talent, determination, and relentless curiosity. </p>
+        </div>
+      </div>
+
+
+      <div style="height: 50px;"></div>
+
+
+      <div class="services px-5 rounded-4 bg-dark bg-opacity-10 border" data-bs-theme="dark" style="backdrop-filter: blur(2px); ">
+        <h2 class="text-center mt-5 text-light fw-bold">Team MineCode</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+          <div class="col">
+            <div class="card bg-dark bg-opacity-10 mt-5" data-bs-theme="dark" style="backdrop-filter: blur(2px);">
+              <img src="./images/shariq.jpg" height="300px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Shariq</h5>
+                <p class="card-text">Basically a guy who is involved in Front end Web Development and has some problem solving skills. He's obsessed with gym and anime.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark bg-opacity-10  mt-5" data-bs-theme="dark" style="backdrop-filter: blur(2px);">
+              <img src="./images/Prateek.jpg" height="300px"class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Prateek</h5>
+                <p class="card-text">A person who's full of energy and has proficient communication skill who loves to play drum. He lives every moment and breathes rhythm.  </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark bg-opacity-10  mt-5" data-bs-theme="dark" style="backdrop-filter: blur(2px);">
+              <img src="./images/Inayat.jpg" height="300px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Inayat</h5>
+                <p class="card-text">I'm very much experienced in Full stack Web Development, Cyber Security, cloud computing, etc. and has a well maintained physique.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark bg-opacity-10 mt-5" data-bs-theme="dark" style="backdrop-filter: blur(2px);">
+              <img src="./images/Sushant.jpg" height="300px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Sushant</h5>
+                <p class="card-text">A guy who enjoys every single moment of life and has a perfect height of 6'4. Loves to play basketball and is good with Problem Solving. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark bg-opacity-10  mt-5" data-bs-theme="dark" style="backdrop-filter: blur(2px);">
+              <img src="./images/Saketh.jpg" height="300px"class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Saketh</h5>
+                <p class="card-text">I'm a full stack web developer who's currently pursuing Data Analytics. I've many hobbies such as watching anime, playing genshin impact, etc.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark bg-opacity-10  mt-5" data-bs-theme="dark" style="backdrop-filter: blur(2px);">
+              <img src="./images/Zaker.jpg" height="300px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Zaker</h5>
+                <p class="card-text">Basically a very silent guy who doesn't like to show off his skills. He's pretty much experienced in designing stuff like presentations,  etc.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div style="height: 50px;"></div>
+
+
+    </div>
+    
+
+</body>
+</html>
