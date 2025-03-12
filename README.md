@@ -1,0 +1,2 @@
+# MineCode
+Static Website
