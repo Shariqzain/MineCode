@@ -1,10 +1,10 @@
 * {
     font-family: 'Courier New', Courier, monospace;
 }
-  
+
 html {
     scroll-behavior: smooth;
-  }
+}
 
 .video-bg {
     position: fixed;
@@ -15,7 +15,6 @@ html {
     object-fit: cover;
     z-index: -1; /* Sends the video to the background */
 }
-
 
 /* Add a dark overlay for better readability */
 .overlay {
@@ -29,8 +28,40 @@ html {
 }
 
 .minecode {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
+@media (max-width: 768px) {
+    .minecode {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mcimg {
+        order: 2;
+    }
+
+    .mctext {
+        order: 1;
+    }
+
+    .carousel-inner .row {
+        flex-direction: column;
+    }
+
+    .carousel-inner .col-md-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .services {
+        height: auto;
+    }
+
+    #contact {
+        height: auto;
+    }
+}
